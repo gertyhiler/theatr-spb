@@ -9,7 +9,8 @@
 
  header {
     min-height: 100vh;
-    background: #000 url('../img/Rectangle\ 3.jpg');
+    background: #000 url('../img/Rectangle\ 3.jpg') no-repeat;
+    background-size: cover;
     padding: 0 10em;
  }
 /* NAVIGATION */
