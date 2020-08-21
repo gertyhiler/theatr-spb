@@ -118,34 +118,53 @@ text-transform: uppercase;
 /* наши постановки */
 
 .img-slider{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 3em;
 }
+.img-slider div{
+    width: 443px;
+    height: 550px;
+    font-size: 1.2em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+.bcg-img-1{
+    background: url("../img/Rectangle15.jpg") no-repeat;
+}
+.bcg-img-2{
+    background: url("../img/Rectangle16.png") no-repeat;
+    grid-template-areas: 'search'
+    'search';
+   align-items: center;
+    justify-items: center;
+}
+.bcg-img-3{
+    background: url("../img/Rectangle17.png") no-repeat;
+}
+.bcg-img-4{
+    background: url("../img/Rectangle18.jpg") no-repeat;
+}
 .pos-img-heading{
-    position: relative;
-    top:-530px;
-    left: -40px;
     text-transform:uppercase;
     letter-spacing: 0.1em;
+    margin: 1.5em;
+    
 }
 .rotate {
     transform: rotate(-90deg);
-    position: relative;
     display: inline-block;
-    top:-80px;
+    justify-self: start;
+    align-self: center;
 }
 .pos-slider-block{
-    display: flex;
-    justify-content: center;
-    position: relative;
     border: none;
     background-color: #D1A954;
     width: 50px;
     height: 50px;
     border-radius:50%;
-    top: -300px;
-    left:200px;
+    grid-area: search;
 }
 
 /* рейтинг */
