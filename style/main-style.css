@@ -17,14 +17,17 @@
  nav{
     text-transform: uppercase;
     padding: 3.8em;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
  }
- nav a{
+ nav > a{
     text-decoration: none;
     margin: 1.3em;
     transition: 0.3s border;
+    display: inline;
  }
- nav a:hover {
+ nav > a:hover {
      border-bottom: 3px solid #D1A954;
  }
  nav :nth-child(6){
@@ -36,18 +39,22 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding-top: 8em ;
+}
+.main-info > img{
+    margin: 10px;
 }
 .info-text{
     min-width: 300px;
     max-width: 540px;
     height: fit-content;
 }
-.info-text p{ 
+.info-text > p{ 
     font-size: 1em;
     margin-bottom: 1.4em;
 }
-.info-text h1{
+.info-text > h1{
     font-size: 64px;
     line-height: 87px;
     letter-spacing: 0.1em;
@@ -59,7 +66,8 @@
     background-color: #D1A954;
     border: none;
     letter-spacing: 0.1em;
-    font-size: 1.1em
+    font-size: 1.3em;
+    font-weight: 600;
 }
 
 /* SLIDER */
@@ -69,11 +77,11 @@
     flex-direction: column;
 
 }
-.slider span {
+.slider > span {
     display: flex;
     justify-content: space-around;
 }
-.slider span button{
+.slider > span > button{
     background-color: rgba(255, 255, 255, 0);
     border: none;
     margin-top: 1.1em;
@@ -84,9 +92,6 @@
 
 body {
     background-color: #333;
-}
-.main-content{
-    overflow: hidden;
 }
 .heading{
     text-align: center;
@@ -106,12 +111,12 @@ text-transform: uppercase;
 .format{ 
     font-size: 38px;
     text-transform: uppercase;
-    line-height:3em;
+    line-height:1.4em;
 }
 .about-text {
     max-width: 592px;
 }
-.about-number *{
+.about-number > *{
     margin-top: 10px;
 }
 
@@ -121,8 +126,9 @@ text-transform: uppercase;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 3em;
+    overflow: hidden;
 }
-.img-slider div{
+.img-slider > div{
     width: 443px;
     height: 550px;
     font-size: 1.2em;
@@ -206,7 +212,7 @@ grid-template-areas:
     grid-area: stars;
 
 }
-.stars img {
+.stars > img {
     margin: 15px;
 }
 .raiting-text {
@@ -236,6 +242,11 @@ grid-template-areas:
 
 /* CONTACTS */
 
+.pos-contact{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .contacts{
     margin-top: 7em;
     padding: 0 10%;
@@ -264,14 +275,13 @@ grid-template-areas:
     margin: 1.1em;
     padding: 3px;
 }
-form span {
+form > span {
     color: #989898;
 }
 #form-pos {
     display: grid;
     grid-area: form;
     grid-template-rows: 70px 70px 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "name company message message"
     "tel mail message message"
@@ -296,12 +306,89 @@ footer{
     padding: 1.4em 0;
  
 }
-footer span{
+footer > span{
     color:#585858;
     font-size: 1.2em;
     line-height: 2em;
 }
-footer span:nth-child(2){
+footer > span:nth-child(2){
     grid-column: end-line;
 
+}
+
+@media only screen and (max-width:992px){
+    nav{
+        padding: 0px;
+        justify-content: center;
+    }
+    nav>a{
+        margin: .7em;
+    }
+    .slider{
+        display: none;
+    }
+    .info-text > h1{
+        font-size: 40px;
+    }
+    .button{
+        padding: .5em;
+        font-size:1.2em;
+    }
+    .main-info{
+        padding: 3em 0 0 0; 
+    }
+    .main-info > img {
+        display: none;
+    }
+    .format{
+        font-size: 28px;
+    }
+    .raiting {
+        width: 555px;
+        height: 225px;
+    }
+    .heading{
+        font-size: 28px;
+    }
+    .partner > img{
+        width: 76%;
+    }
+    .contact-number{
+        margin: 10px;
+        font-size: 1.1em;
+    }
+    .contacts{
+        grid-template-areas:
+        "head head"
+        "form form"
+        "number number"
+    }
+}
+@media only screen  and (max-width:768px){
+   header{
+       padding: 0px;
+   }
+    nav{
+       display: flex;
+    }
+    .pos-info{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 576px){
+   nav{
+       font-size: 13px;
+   }
+    .info-text > h1 {
+        font-size: 30px;
+    }
+    .contacts {
+        padding: 5%;
+        grid-template-rows: 20% 1fr 1fr;
+    }
+    #form-pos{
+        grid-template-columns: 30% 30% 40%;
+    }
 }
