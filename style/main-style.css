@@ -392,3 +392,52 @@ footer > span:nth-child(2){
         grid-template-columns: 30% 30% 40%;
     }
 }
+@media only screen and (max-width: 378px){
+    header {
+        min-height: 100%;
+        padding-bottom: 1.2em;
+        font-size: .7em;
+    }
+    nav {
+        font-size: 10px;
+    }
+    .about {
+        padding: 0em;
+    }
+    .heading {
+        font-size: 20px;
+    }
+    .main-info {
+        padding: 2em 0 0 1em;
+    }
+    .grid{
+        grid-template-columns: 60px 200px;
+    }
+    .format {
+        font-size: 20px;
+    }
+    .about-text > p{
+        font-size: .8em;
+    }
+    .stars > img {
+        margin: 10px;
+    }
+    .raiting-text {
+        font-size: 22px;
+    }
+    .partner{
+        padding:0px;
+    }
+    .logo-partner{
+        margin: 1.2em;
+    }
+    .img-slider > div {
+        font-size: 1em;
+    }
+    .heading {
+        font-size: 22px;
+    }
+   .contacts {
+        font-size: .8em;
+}
+}
