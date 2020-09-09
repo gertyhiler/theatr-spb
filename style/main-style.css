@@ -197,7 +197,7 @@ padding-top: 5%;
 grid-template-columns: 130px 340px;
 grid-template-rows: 1fr 1fr 1fr 1fr; 
 grid-template-areas:
-    "year stars"
+    ". stars"
     "year text"
     "year text"
     "year text";
@@ -274,10 +274,10 @@ grid-template-areas:
     font-size: 1.5em
 }
 .text-input{
-    background: #616161;
+    background: #535252;
     border: 2px solid #4e4e4e;
-    margin: 1.1em;
-    padding: 3px;
+    margin: .4em;
+    padding: .6em;
 }
 form > span {
     color: #989898;
@@ -285,12 +285,13 @@ form > span {
 #form-pos {
     display: grid;
     grid-area: form;
-    grid-template-rows: 70px 70px 1fr 1fr;
+    grid-template-columns: 20% 20% 1fr 1fr; 
+    grid-template-rows: repeat(2, 15%) 22% 1fr;
     grid-template-areas: 
     "name company message message"
     "tel mail message message"
-    "info info . ."
-    "info info submit submit";
+    "info info . submit"
+    "info info . .";
 }
 #name{grid-area: name;}
 #company{grid-area: company;}
@@ -298,7 +299,7 @@ form > span {
 #mail{grid-area:mail;}
 #message{grid-area:message;}
 #info{grid-area:info; padding-left: 1em; font-size: 15px;}
-#submit{grid-area:submit;}
+#submit{grid-area:submit; }
 
 /* FOOTER */
 
