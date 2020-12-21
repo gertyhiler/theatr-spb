@@ -1,44 +1,48 @@
+
 *{
     font-family: Open Sans Condensed;
     color: #fff;
     margin: 0px;
     padding: 0px;
- }
- html{
+} 
+
+html{
     scroll-behavior: smooth;
- }
- 
+}
+
  /* HEADER */ 
 
 
- header {
+header {
     min-height: 100vh;
     background: #000 url('../img/Rectangle\ 3.jpg') no-repeat;
     background-size: cover;
-    padding: 0 10em;
- }
+    padding: 0 2em;
+}
 /* NAVIGATION */
- nav{
+nav{
+    font-size: 1.4em;
     text-transform: uppercase;
-    padding: 3.8em;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
- }
- nav > a{
+}
+nav > a{
     text-decoration: none;
     margin: 1.3em;
     transition: 0.3s border;
     display: inline;
- }
- nav > a:hover {
-     border-bottom: 3px solid #D1A954;
- }
- nav :nth-child(6){
+}
+nav > a:hover {
+    border-bottom: 3px solid #D1A954;
+}
+nav :nth-child(6){
     border-bottom: 3px solid #D1A954;
     margin-left: 5.2em;
 }
+
 /* TEXT INFO*/
+
 .main-info{
     display: flex;
     flex-direction: row;
@@ -51,7 +55,7 @@
 }
 .info-text{
     min-width: 300px;
-    max-width: 540px;
+    max-width: 36%;
     height: fit-content;
 }
 .info-text > p{ 
@@ -64,8 +68,8 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
- .button{
-    padding: 1.1em 0.8em;
+.button{
+    padding: 2% 20%;
     text-transform: uppercase;
     background-color: #D1A954;
     border: none;
@@ -79,7 +83,6 @@
 .slider{
     display: flex;
     flex-direction: column;
-
 }
 .slider > span {
     display: flex;
@@ -88,6 +91,7 @@
 .slider > span > button{
     background-color: rgba(255, 255, 255, 0);
     border: none;
+    font-size: 1.2em;
     margin-top: 1.1em;
     letter-spacing: 0.1em;
 }
@@ -100,10 +104,10 @@ body {
 .heading{
     text-align: center;
     font-style: normal;
-font-size: 48px;
-line-height: 65px;
-letter-spacing: 0.1em;
-text-transform: uppercase;
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 .about{
     padding: 2em;
@@ -118,7 +122,7 @@ text-transform: uppercase;
     line-height:1.4em;
 }
 .about-text {
-    max-width: 592px;
+    max-width: 40%;
 }
 .about-number > *{
     margin-top: 10px;
@@ -147,7 +151,7 @@ text-transform: uppercase;
     background: url("../img/Rectangle16.png") no-repeat;
     grid-template-areas: 'search'
     'search';
-   align-items: center;
+    align-items: center;
     justify-items: center;
 }
 .bcg-img-3{
@@ -184,31 +188,30 @@ text-transform: uppercase;
     justify-content: center;
 }
 .raiting{ 
-width: 1110px;
-height:550px;
-background: url("../img/Rectangle28.jpg") no-repeat;
-display: flex;
-justify-content: center;
-padding-top: 5%;
-
+    width: 1110px;
+    height:550px;
+    background: url("../img/Rectangle28.jpg") no-repeat;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
 }
 .grid{
     display: inline-grid;
-grid-template-columns: 130px 340px;
-grid-template-rows: 1fr 1fr 1fr 1fr; 
-grid-template-areas:
-    ". stars"
-    "year text"
-    "year text"
-    "year text";
+    grid-template-columns: 130px 340px;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas:
+        ". stars"
+        "year text"
+        "year text"
+        "year text";
     align-content: center;
 }
 .year{
     display: flex;
     flex-direction: column;
-   grid-area: year;
-   justify-items: right;
-   align-items: stretch;
+    grid-area: year;
+    justify-items: right;
+    align-items: stretch;
 }
 .stars{
     display: flex;
@@ -228,7 +231,7 @@ grid-template-areas:
 /* PARTNER */
 
 .partner{
-    padding: 0 20%;
+    padding: 0 10%;
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -288,7 +291,7 @@ form > span {
 #form-pos {
     display: grid;
     grid-area: form;
-    grid-template-columns: 20% 20% 1fr 1fr; 
+    grid-template-columns: 20% 20% 1fr 2fr; 
     grid-template-rows: repeat(2, 15%) 22% 1fr;
     grid-template-areas: 
     "name company message message"
@@ -296,6 +299,7 @@ form > span {
     "info info . submit"
     "info info . .";
 }
+
 #name{grid-area: name;}
 #company{grid-area: company;}
 #tel{grid-area:tel;} 
@@ -312,7 +316,6 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1.4em 0;
- 
 }
 footer > span{
     color:#585858;
@@ -324,128 +327,3 @@ footer > span:nth-child(2){
 
 }
 
-@media only screen and (max-width:992px){
-    nav{
-        padding: 0px;
-        justify-content: center;
-    }
-    nav>a{
-        margin: .7em;
-    }
-    .slider{
-        display: none;
-    }
-    .info-text > h1{
-        font-size: 40px;
-    }
-    .button{
-        padding: .5em;
-        font-size:1.2em;
-    }
-    .main-info{
-        padding: 3em 0 0 0; 
-    }
-    .main-info > img {
-        display: none;
-    }
-    .format{
-        font-size: 28px;
-    }
-    .raiting {
-        width: 555px;
-        height: 225px;
-    }
-    .heading{
-        font-size: 28px;
-    }
-    .partner > img{
-        width: 76%;
-    }
-    .contact-number{
-        margin: 10px;
-        font-size: 1.1em;
-    }
-    .contacts{
-        grid-template-areas:
-        "head head"
-        "form form"
-        "number number"
-    }
-}
-@media only screen  and (max-width:768px){
-   header{
-       padding: 0px;
-   }
-    nav{
-       display: flex;
-    }
-    .pos-info{
-        display: flex;
-        flex-direction:row;
-        justify-content: space-around;
-    }
-}
-@media only screen and (max-width: 576px){
-   nav{
-       font-size: 13px;
-   }
-    .info-text > h1 {
-        font-size: 30px;
-    }
-    .contacts {
-        padding: 5%;
-        grid-template-rows: 20% 1fr 1fr;
-    }
-    #form-pos{
-        grid-template-columns: 30% 30% 40%;
-    }
-}
-@media only screen and (max-width: 378px){
-    header {
-        min-height: 100%;
-        padding-bottom: 1.2em;
-        font-size: .7em;
-    }
-    nav {
-        font-size: 10px;
-    }
-    .about {
-        padding: 0em;
-    }
-    .heading {
-        font-size: 20px;
-    }
-    .main-info {
-        padding: 2em 0 0 1em;
-    }
-    .grid{
-        grid-template-columns: 60px 200px;
-    }
-    .format {
-        font-size: 20px;
-    }
-    .about-text > p{
-        font-size: .8em;
-    }
-    .stars > img {
-        margin: 10px;
-    }
-    .raiting-text {
-        font-size: 22px;
-    }
-    .partner{
-        padding:0px;
-    }
-    .logo-partner{
-        margin: 1.2em;
-    }
-    .img-slider > div {
-        font-size: 1em;
-    }
-    .heading {
-        font-size: 22px;
-    }
-   .contacts {
-        font-size: .8em;
-}
-}

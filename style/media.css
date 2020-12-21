@@ -1,0 +1,169 @@
+@media only screen and (min-width: 1668px){
+    nav{
+        font-size: 2em;
+    }
+    .info-text {
+        font-size: 2em; 
+    }
+    #form-pos {
+        grid-template-rows: repeat(2, 25%) 29%;
+    }
+    .about-text > p {
+        font-size: 2em;
+    }
+    .format {
+        font-size: 3em;
+    }
+    .heading {
+        font-size: 4em;
+    }
+    .pos-info {
+        font-size: 2em;
+    }
+    .raiting-text {
+        font-size: 2.3em;
+    }
+    .contact-number {
+        font-size: 2em;
+    }
+    form > input, textarea {
+        font-size: 1.3em;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    nav {
+        font-size: 1em;
+    }
+    .info-text > h1 {
+        font-size: 2.2em;
+    }
+    .about-text {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width:992px){
+    nav{
+        padding: 0px;
+        justify-content: center;
+    }
+    nav>a{
+        margin: .7em;
+    }
+    .slider{
+        display: none;
+    }
+    .info-text > h1{
+        font-size: 40px;
+    }
+    .button{
+        padding: .5em;
+        font-size:1.2em;
+    }
+    .main-info{
+        padding: 3em 0 0 0; 
+    }
+    .main-info > img {
+        display: none;
+    }
+    .format{
+        font-size: 28px;
+    }
+    .raiting {
+        width: 555px;
+        height: 225px;
+    }
+    .heading{
+        font-size: 28px;
+    }
+    .partner > img{
+        width: 76%;
+    }
+    .contact-number{
+        margin: 10px;
+        font-size: 1.1em;
+    }
+    .contacts{
+        grid-template-areas:
+        "head head"
+        "form form"
+        "number number"
+    }
+}
+@media only screen  and (max-width:768px){
+    header{
+        padding: 0px;
+    }
+    nav{
+        display: flex;
+    }
+    .pos-info{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 576px){
+    nav{
+        font-size: 13px;
+    }
+    .info-text > h1 {
+        font-size: 30px;
+    }
+    .contacts {
+        padding: 5%;
+        grid-template-rows: 20% 1fr 1fr;
+    }
+    #form-pos{
+        grid-template-columns: 30% 30% 40%;
+    }
+}
+@media only screen and (max-width: 378px){
+    header {
+        min-height: 100%;
+        padding-bottom: 1.2em;
+        font-size: .7em;
+    }
+    nav {
+        display: none;
+    }
+    .about {
+        padding: 0em;
+    }
+    .heading {
+        font-size: 20px;
+    }
+    .main-info {
+        padding: 2em 0 0 1em;
+    }
+    .grid{
+        grid-template-columns: 60px 200px;
+    }
+    .format {
+        font-size: 20px;
+    }
+    .about-text > p{
+        font-size: .8em;
+    }
+    .stars > img {
+        margin: 10px;
+    }
+    .raiting-text {
+        font-size: 22px;
+    }
+    .partner{
+        padding:0px;
+    }
+    .logo-partner{
+        margin: 1.2em;
+    }
+    .img-slider > div {
+        font-size: 1em;
+    }
+    .heading {
+        font-size: 22px;
+    }
+    .contacts {
+            font-size: .8em;
+    }
+}
